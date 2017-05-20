@@ -1,4 +1,4 @@
-# react-style-component
+# react-style-component [![Build Status](https://travis-ci.org/bealearts/react-style-component.png?branch=master)](https://travis-ci.org/bealearts/react-style-component) [![npm version](https://badge.fury.io/js/react-style-component.svg)](http://badge.fury.io/js/react-style-component) [![Dependency Status](https://david-dm.org/bealearts/react-style-component.png)](https://david-dm.org/bealearts/react-style-component)
 
 Locally scoped CSS for [React](https://facebook.github.io/react/) components
 
@@ -15,8 +15,8 @@ import React from 'react';
 import Style from 'react-style-component';
 
 export default function MyComponent({ bgColor = 'inherit' }) {
-	return (
-		<div>
+    return (
+        <div>
             <Style>{`
                 p {
                     color: red;
@@ -24,9 +24,9 @@ export default function MyComponent({ bgColor = 'inherit' }) {
                 }
             `}</Style>
 
-			<p>Hello World!</p>
-		</div>
-	);
+            <p>Hello World!</p>
+        </div>
+    );
 }
 ```
 
@@ -41,14 +41,14 @@ Each `Style` component outputs an HTML `style` element with the CSS selectors pr
 The usage example above, might produce the following DOM output.
 ```html
 <div class="uid-H1MaV06lZ">
-	<style>
-		.uid-H1MaV06lZ p {
-			color: red;
-			background-color: inhert;
-		}
-	</style>
+    style>
+        .uid-H1MaV06lZ p {
+            color: red;
+            background-color: inhert;
+        }
+    </style>
 
-	<p>Hello World!</p>
+    <p>Hello World!</p>
 </div>
 ```
 
