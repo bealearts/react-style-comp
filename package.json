@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build": "webpack --progress --colors",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run build",
     "start": "webpack-dev-server --config ./example/webpack.config.js --colors --open --hot --inline"
   },
   "keywords": [
@@ -31,11 +31,19 @@
     "local css",
     "react-component"
   ],
-  "author": "David Beale",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bealearts/eact-style-component.git"
+  },
   "license": "MIT",
+  "author": {
+    "name": "David Beale",
+    "url": "http://bealearts.co.uk/"
+  },
   "dependencies": {
     "postcss": "^6.0.1",
     "postcss-prefix-selector": "^1.6.0",
+    "prop-types": "^15.5.10",
     "shortid": "^2.2.8"
   }
 }

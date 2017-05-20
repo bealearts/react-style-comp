@@ -4,12 +4,13 @@ import { render } from 'react-dom';
 import Style from '../src/react-style-component';
 
 
-function MyComponent() {
+function MyComponent({ bgColor = 'inherit' }) {
 	return (
 		<div>
             <Style>{`
                 p {
                     color: red;
+					background-color: ${bgColor};
                 }
             `}</Style>
 
@@ -21,9 +22,11 @@ function MyComponent() {
 
 render(
     <div>
-        <MyComponent/>
+        <MyComponent bgColor='lightgrey'/>
 
         <p>Hello World!</p>
+
+		<MyComponent bgColor='lightblue'/>
     </div>
     ,
     document.getElementById('app')
