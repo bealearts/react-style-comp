@@ -20,10 +20,9 @@
     "webpack-package-loaders-plugin": "^2.2.0"
   },
   "scripts": {
-    "start": "",
     "build": "webpack --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "example": "webpack-dev-server --config ./example/webpack.config.js --colors --open --hot --inline"
+    "start": "webpack-dev-server --config ./example/webpack.config.js --colors --open --hot --inline"
   },
   "keywords": [
     "React",
@@ -33,5 +32,10 @@
     "react-component"
   ],
   "author": "David Beale",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^6.0.1",
+    "postcss-prefix-selector": "^1.6.0",
+    "shortid": "^2.2.8"
+  }
 }
