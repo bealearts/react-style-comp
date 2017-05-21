@@ -1,6 +1,6 @@
 {
   "name": "react-style-comp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Locally scoped CSS for React components",
   "main": "dist/react-style-comp.js",
   "peerDependencies": {
