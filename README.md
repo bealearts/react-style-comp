@@ -1,4 +1,4 @@
-# react-style-component [![Build Status](https://travis-ci.org/bealearts/react-style-component.png?branch=master)](https://travis-ci.org/bealearts/react-style-component) [![npm version](https://badge.fury.io/js/react-style-component.svg)](http://badge.fury.io/js/react-style-component) [![Dependency Status](https://david-dm.org/bealearts/react-style-component.png)](https://david-dm.org/bealearts/react-style-component)
+# react-style-comp [![Build Status](https://travis-ci.org/bealearts/react-style-comp.png?branch=master)](https://travis-ci.org/bealearts/react-style-comp) [![npm version](https://badge.fury.io/js/react-style-comp.svg)](http://badge.fury.io/js/react-style-comp) [![Dependency Status](https://david-dm.org/bealearts/react-style-comp.png)](https://david-dm.org/bealearts/react-style-comp)
 
 Locally scoped CSS for [React](https://facebook.github.io/react/) components
 
@@ -12,7 +12,7 @@ Locally scoped CSS for [React](https://facebook.github.io/react/) components
 # Usage
 ```js
 import React from 'react';
-import Style from 'react-style-component';
+import Style from 'react-style-comp';
 
 export default function MyComponent({ bgColor = 'inherit' }) {
     return (
@@ -32,7 +32,7 @@ export default function MyComponent({ bgColor = 'inherit' }) {
 
 # Install
 ```shell
-npm install react-style-component --save
+npm install react-style-comp --save
 ```
 
 # How does it work?

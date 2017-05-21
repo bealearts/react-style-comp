@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import Style from '../src/react-style-component';
+import Style from '../src/react-style-comp';
 
 
 function MyComponent({ bgColor = 'inherit' }) {

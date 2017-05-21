@@ -1,8 +1,8 @@
 {
-  "name": "react-style-component",
+  "name": "react-style-comp",
   "version": "0.1.0",
   "description": "Locally scoped CSS for React components",
-  "main": "dist/react-style-component.js",
+  "main": "dist/react-style-comp.js",
   "peerDependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
@@ -34,7 +34,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bealearts/eact-style-component.git"
+    "url": "https://github.com/bealearts/eact-style-comp.git"
   },
   "license": "MIT",
   "author": {
