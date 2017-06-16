@@ -31,7 +31,7 @@ export default class Style extends PureComponent {
 
 Style.propTypes = {
     children: PropTypes.string.isRequired
-}
+};
 
 
 function encapsulate(css, uid) {
