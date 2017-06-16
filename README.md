@@ -18,6 +18,10 @@ export default function MyComponent({ bgColor = 'inherit' }) {
     return (
         <div>
             <Style>{`
+                {
+                    border: 2px solid blue;
+                }
+
                 p {
                     color: red;
                     background-color: ${bgColor};
@@ -42,6 +46,10 @@ The usage example above, might produce the following DOM output.
 ```html
 <div class="uid-H1MaV06lZ">
     style>
+        .uid-H1MaV06lZ {
+            border: 2px solid blue;
+        }
+        
         .uid-H1MaV06lZ p {
             color: red;
             background-color: inhert;

@@ -5,18 +5,22 @@ import Style from '../src/react-style-comp';
 
 
 function MyComponent({ bgColor = 'inherit' }) {
-	return (
-		<div>
+    return (
+        <div>
             <Style>{`
+                {
+                    border: 2px solid blue;
+                }
+
                 p {
                     color: red;
-					background-color: ${bgColor};
+                    background-color: ${bgColor};
                 }
             `}</Style>
 
-			<p>Hello Component!</p>
-		</div>
-	);
+            <p>Hello Component!</p>
+        </div>
+    );
 }
 
 
@@ -26,7 +30,7 @@ render(
 
         <p>Hello World!</p>
 
-		<MyComponent bgColor='lightblue'/>
+        <MyComponent bgColor='lightblue'/>
     </div>
     ,
     document.getElementById('app')
