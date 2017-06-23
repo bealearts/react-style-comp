@@ -26,11 +26,11 @@ function MyComponent({ bgColor = 'inherit' }) {
 
 render(
     <div>
-        <MyComponent bgColor='lightgrey'/>
+        <MyComponent bgColor="lightgrey" />
 
         <p>Hello World!</p>
 
-        <MyComponent bgColor='lightblue'/>
+        <MyComponent bgColor="lightblue" />
     </div>
     ,
     document.getElementById('app')

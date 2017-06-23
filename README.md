@@ -14,7 +14,7 @@ Locally scoped CSS for [React](https://facebook.github.io/react/) components
 import React from 'react';
 import Style from 'react-style-comp';
 
-export default function MyComponent({ bgColor = 'inherit' }) {
+export default function MyComponent({ bgColor }) {
     return (
         <div>
             <Style>{`
@@ -49,7 +49,7 @@ The usage example above, might produce the following DOM output.
         .uid-H1MaV06lZ {
             border: 2px solid blue;
         }
-        
+
         .uid-H1MaV06lZ p {
             color: red;
             background-color: inhert;
