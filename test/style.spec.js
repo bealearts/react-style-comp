@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { expect } from 'chai';
-// import { mount } from 'enzyme';
 
 import Style from '../';
 
@@ -63,9 +62,13 @@ function style(element, name) {
     return window.getComputedStyle(element).getPropertyValue(name);
 }
 
+// enzyme's mount does not respect the CSS
 function mount(comp) {
     const el = document.getElementById('test');
+    el.innerHTM = '';
+
     render(comp, el);
+
     return {
         getDOMNode() {
             return el.firstChild;
