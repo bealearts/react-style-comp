@@ -1,10 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
+import PropTypes from 'prop-types';
 
 import Style from '../src/react-style-comp';
 
 
-function MyComponent({ bgColor = 'inherit' }) {
+function MyComponent({ bgColor }) {
     return (
         <div>
             <Style>{`
@@ -22,6 +23,14 @@ function MyComponent({ bgColor = 'inherit' }) {
         </div>
     );
 }
+
+MyComponent.propTypes = {
+    bgColor: PropTypes.string
+};
+
+MyComponent.defaultProps = {
+    bgColor: 'inherit'
+};
 
 
 render(
