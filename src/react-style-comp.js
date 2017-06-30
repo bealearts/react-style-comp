@@ -2,9 +2,10 @@ import React, { PureComponent } from 'react';
 import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import postcss from 'postcss';
-import prefixSelector from 'postcss-prefix-selector';
 import shortid from 'shortid';
 
+// Use ES5 version
+import prefixSelector from '../dist/node_modules/postcss-prefix-selector';
 
 export default class Style extends PureComponent {
     constructor() {
