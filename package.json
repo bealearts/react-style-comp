@@ -27,7 +27,8 @@
     "react-dom": "^15.5.4",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5",
-    "webpack-package-loaders-plugin": "^2.2.0"
+    "webpack-package-loaders-plugin": "^2.2.0",
+    "postcss-prefix-selector": "^1.6.0"
   },
   "scripts": {
     "build": "babel src node_modules/postcss-prefix-selector/index.js -d dist",
@@ -54,7 +55,6 @@
   },
   "dependencies": {
     "postcss": "^6.0.1",
-    "postcss-prefix-selector": "^1.6.0",
     "prop-types": "^15.5.10",
     "shortid": "^2.2.8"
   }
