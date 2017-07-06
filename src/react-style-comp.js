@@ -38,8 +38,19 @@ Style.propTypes = {
 function encapsulate(css, uid) {
     return postcss()
         .use(prefixSelector({
-            prefix: `.${uid}`
+            prefix: `.${uid}`,
+            exclude: ['@-webkit-keyframes'],
+            transform
         }))
         .process(css)
         .css;
+}
+
+
+function transform(prefix, selector, prefixedSelector) {
+    if (selector[0] === ':') {
+        return prefix + selector;
+    }
+    
+    return prefixedSelector;
 }

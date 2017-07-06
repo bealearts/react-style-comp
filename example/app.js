@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 import Style from '../src/react-style-comp';
 
+import Spinner from './Spinner';
 
 function MyComponent({ bgColor }) {
     return (
@@ -37,7 +38,7 @@ render(
     <div>
         <MyComponent bgColor="lightgrey" />
 
-        <p>Hello World!</p>
+        <Spinner />
 
         <MyComponent bgColor="lightblue" />
     </div>

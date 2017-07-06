@@ -35,7 +35,7 @@
     "lint": "eslint src test",
     "test:unit": "mocha --require test/setup.js --recursive test/ --compilers js:babel-core/register",
     "test": "npm run build && npm run lint && npm run test:unit",
-    "start": "webpack-dev-server --config example/webpack.config.js --colors --open --hot --inline"
+    "start": "webpack-dev-server --config example/webpack.config.js --colors --hot --inline"
   },
   "keywords": [
     "React",
