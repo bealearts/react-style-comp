@@ -3,6 +3,7 @@ import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import postcss from 'postcss';
 import shortid from 'shortid';
+import prefixKeyframes from 'postcss-prefixer-keyframes';
 
 // Use ES5 version
 import prefixSelector from '../dist/node_modules/postcss-prefix-selector';
@@ -42,6 +43,9 @@ function encapsulate(css, uid) {
             exclude: ['@-webkit-keyframes'],
             transform
         }))
+        .use(prefixKeyframes({
+            prefix: `${uid}-`
+        }))
         .process(css)
         .css;
 }
@@ -51,6 +55,6 @@ function transform(prefix, selector, prefixedSelector) {
     if (selector[0] === ':') {
         return prefix + selector;
     }
-    
+
     return prefixedSelector;
 }
