@@ -21,6 +21,7 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: path.join(__dirname)
+        contentBase: path.join(__dirname),
+        disableHostCheck: true
     }
 };
