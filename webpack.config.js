@@ -11,12 +11,12 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'react-style-comp.js',
-        library: "react-style-comp",
-        libraryTarget: "umd"
+        library: 'react-style-comp',
+        libraryTarget: 'umd'
     },
-    externals : {
+    externals: {
         react: 'react',
-        ['react-dom']: 'react-dom'
+        'react-dom': 'react-dom'
     },
     module: {
         rules: [
@@ -25,7 +25,8 @@ module.exports = {
                 loader: 'babel-loader',
                 include: [
                     path.join(__dirname, 'src'),
-                    path.join(__dirname, 'node_modules/postcss-prefix-selector/')
+                    path.join(__dirname, 'node_modules/postcss-prefix-selector/'),
+                    path.join(__dirname, 'node_modules/postcss/')
                 ]
             },
             {
