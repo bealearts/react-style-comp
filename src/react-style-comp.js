@@ -4,9 +4,8 @@ import PropTypes from 'prop-types';
 import postcss from 'postcss';
 import shortid from 'shortid';
 import prefixKeyframes from 'postcss-prefixer-keyframes';
+import prefixSelector from 'postcss-prefix-selector';
 
-// Use ES5 version
-import prefixSelector from '../dist/node_modules/postcss-prefix-selector';
 
 export default class Style extends PureComponent {
     constructor() {

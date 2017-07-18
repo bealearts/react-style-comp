@@ -18,23 +18,28 @@
     "chai": "^3.5.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
+    "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.1.0",
     "jsdom": "^11.0.0",
     "mocha": "^3.4.2",
+    "postcss-prefix-selector": "^1.6.0",
+    "postcss": "^6.0.1",
+    "postcss-prefixer-keyframes": "0.0.3",
+    "prop-types": "^15.5.10",
+    "shortid": "^2.2.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5",
-    "webpack-package-loaders-plugin": "^2.2.0",
-    "postcss-prefix-selector": "^1.6.0"
+    "webpack-package-loaders-plugin": "^2.2.0"
   },
   "scripts": {
-    "build": "babel src node_modules/postcss-prefix-selector/index.js -d dist",
-    "lint": "eslint src test",
+    "build": "NODE_ENV=production webpack --colors",
     "test:unit": "mocha --require test/setup.js --recursive test/ --compilers js:babel-core/register",
-    "test": "npm run build && npm run lint && npm run test:unit",
+    "test": "npm run build && npm run test:unit",
     "start": "npm run build && webpack-dev-server --config example/webpack.config.js --colors --hot --inline"
   },
   "keywords": [
@@ -54,9 +59,6 @@
     "url": "http://bealearts.co.uk/"
   },
   "dependencies": {
-    "postcss": "^6.0.1",
-    "postcss-prefixer-keyframes": "0.0.3",
-    "prop-types": "^15.5.10",
-    "shortid": "^2.2.8"
+
   }
 }
