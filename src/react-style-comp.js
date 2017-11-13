@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import postcss from 'postcss';
 import shortid from 'shortid';
@@ -15,7 +14,7 @@ export default class Style extends PureComponent {
 
 
     componentDidMount() {
-        const parentNode = findDOMNode(this).parentNode;
+        const parentNode = this.node.parentNode;
         if (parentNode) {
             parentNode.classList.add(this.uid);
         }
@@ -26,7 +25,7 @@ export default class Style extends PureComponent {
         const children = this.props.children;
         const css = encapsulate(children, this.uid);
 
-        return <style>{css}</style>;
+        return <style ref={(node) => { this.node = node; }}>{css}</style>;
     }
 }
 
