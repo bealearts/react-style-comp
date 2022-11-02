@@ -34,7 +34,7 @@
     "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.9.7",
-    "webpack-package-loaders-plugin": "^2.2.0"
+    "webpack-package-loaders-plugin": "^3.0.0"
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --colors",
